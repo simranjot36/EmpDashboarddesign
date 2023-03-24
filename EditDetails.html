@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>main</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"
+                            alt="">
+                    </a></li>
+            </ul>
+        </div>
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-card-list"></i>
+                    <span>Emp List</span>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>RTC List</span>
+            </a>
+          </li>
+          </ul>
+            <li class="nav-item collapsed active-pro">
+                <a class="nav-link" href="">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+    </aside><!-- End Sidebar-->
+    <main id="main" class="main">
+        <header id="header" class="header fixed-top d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="pagetitle">
+                    <h1>Edit <span>Details</span></h1>
+                </div>
+            </div><!-- End Logo -->
+            <nav class="header-nav ms-auto">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                            <img src="assets/img/Alert.svg">
+                            <span class="badge bg-primary badge-number">4</span>
+                        </a><!-- End Notification Icon -->
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                            <li class="dropdown-header">
+                                You have 4 new notifications
+                                <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="notification-item">
+                                <i class="bi bi-exclamation-circle text-warning"></i>
+                                <div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>30 min. ago</p>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="notification-item">
+                                <i class="bi bi-x-circle text-danger"></i>
+                                <div>
+                                    <h4>Atque rerum nesciunt</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>1 hr. ago</p>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="notification-item">
+                                <i class="bi bi-check-circle text-success"></i>
+                                <div>
+                                    <h4>Sit rerum fuga</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>2 hrs. ago</p>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="notification-item">
+                                <i class="bi bi-info-circle text-primary"></i>
+                                <div>
+                                    <h4>Dicta reprehenderit</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-footer">
+                                <a href="#">Show all notifications</a>
+                            </li>
+                        </ul><!-- End Notification Dropdown Items -->
+                    </li><!-- End Notification Nav -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                            <img src="assets/img/Info.svg">
+                            <span class="badge bg-success badge-number">3</span>
+                        </a><!-- End Messages Icon -->
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                            <li class="dropdown-header">
+                                You have 3 new messages
+                                <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="message-item">
+                                <a href="#">
+                                    <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                                    <div>
+                                        <h4>Maria Hudson</h4>
+                                        <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                        <p>4 hrs. ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="message-item">
+                                <a href="#">
+                                    <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                                    <div>
+                                        <h4>Anna Nelson</h4>
+                                        <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                        <p>6 hrs. ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="message-item">
+                                <a href="#">
+                                    <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                                    <div>
+                                        <h4>David Muldon</h4>
+                                        <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                        <p>8 hrs. ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-footer">
+                                <a href="#">Show all messages</a>
+                            </li>
+                        </ul><!-- End Messages Dropdown Items -->
+                    </li><!-- End Messages Nav -->
+                    <li class="nav-item dropdown pe-3">
+                        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
+                            data-bs-toggle="dropdown">
+                            <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+                        </a><!-- End Profile Iamge Icon -->
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                            <li class="dropdown-header">
+                                <h6>Kevin Anderson</h6>
+                                <span>Web Designer</span>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                    <i class="bi bi-gear"></i>
+                                    <span>Account Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Need Help?</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    <span>Sign Out</span>
+                                </a>
+                            </li>
+                        </ul><!-- End Profile Dropdown Items -->
+                    </li><!-- End Profile Nav -->
+                    <li> <i class="bi bi-list toggle-sidebar-btn"></i></li>
+                </ul>
+            </nav><!-- End Icons Navigation -->
+        </header>
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Browser Default Validation -->
+                             <div class="pagetitle">
+                                <h1>Employee  <span>Details</span></h1>
+                            </div>
+                            <form>
+                                <div class="row mb-3">
+                                    <label for="validationDefaultUsername" class="col-sm-2 col-form-label">Employee
+                                        ID</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="10000" placeholder="00123" class="form-control"
+                                            id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="validationDefaultUsername" class="col-sm-2 col-form-label">Emp
+                                        Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="simran" class="form-control"
+                                            id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="validationDefaultUsername" class="col-sm-2 col-form-label">Current
+                                        CTC</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="500000" class="form-control"
+                                            id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 revisedfield">
+                                    <div class="col-md-2 ">
+                                        <button type="submit" class="btn btn-primary submiteditform">Submit</button>
+                                    </div>
+                                    <div class="col-md-5 ">
+                                        <div class="row mb-3">
+                                            <label for="validationDefaultUsername"
+                                                class="col-sm-4 col-form-label">Revised %</label>
+                                            <div class="col-sm-12 col-md-8">
+                                                <input type="text" placeholder="10" class="form-control"
+                                                    id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="col-sm-12">
+                                            <select id="inputState" class="form-select">
+                                                <option selected="">FBE</option>
+                                                <option>BE</option>
+                                                <option>ME</option>
+                                                <option>AE</option>
+                                                <option>FAE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End Browser Default Validation -->
+                            <div class="pagetitle">
+                                <h1>Revised CTC <span>Details</span></h1>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationDefaultUsername" class="col-sm-2 col-form-label">Revised CTC
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="550000" class="form-control"
+                                        id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationDefaultUsername" class="col-sm-2 col-form-label">Basic</label>
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="320000" class="form-control"
+                                        id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationDefaultUsername" class="col-sm-2 col-form-label">HRA</label>
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="200000" class="form-control"
+                                        id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationDefaultUsername" class="col-sm-2 col-form-label">Prof Tax</label>
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="15000" class="form-control"
+                                        id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationDefaultUsername" class="col-sm-2 col-form-label">ESIC</label>
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="15000" class="form-control"
+                                        id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <div class="bt">
+                            <div class="text-left">
+                                <button  type="submit" class="btn btn-primary submiteditform">Submit</button>
+                               </div>
+                               <div class="text-left">
+                                <button  type="submit" class="btn btn-primary submiteditform">Cancel</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+               <div class="card border-0 text-white tile-0-2-9 chooseYourSide-0-2-10"><div class="card-body px-4 py-5 choose-your-side-bg" style="background-image:url(assets/img/people.png);"><p class="h4 mt-3">Small actions big differences</p><p class="lead">No need to search to find, <b>just set</b>.</p></div></div>
+
+                    </div>
+        </section>
+
+
+    </main><!-- End #main -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            dataTable = $("#example").DataTable({
+                "columnDefs": [{
+                    "targets": [7],
+                    "visible": false
+                }]
+
+            });
+
+
+
+            /*dataTable.columns().every( function () {
+            var that = this;
+
+            $('input', this.footer()).on( 'keyup change', function () {
+                if ( that.search() !== this.value ) {
+                    that.search(this.value).draw();
+                }
+            });
+          });*/
+
+
+            $('.filter-checkbox').on('change', function (e) {
+                var searchTerms = []
+                $.each($('.filter-checkbox'), function (i, elem) {
+                    if ($(elem).prop('checked')) {
+                        searchTerms.push("^" + $(this).val() + "$")
+                    }
+                })
+                dataTable.column(1).search(searchTerms.join('|'), true, false, true).draw();
+            });
+
+            $('.status-dropdown').on('change', function (e) {
+                var status = $(this).val();
+                $('.status-dropdown').val(status)
+                console.log(status)
+                //dataTable.column(6).search('\\s' + status + '\\s', true, false, true).draw();
+                dataTable.column(7).search(status).draw();
+            })
+        });
+    </script>
+</body>
+
+</html>
